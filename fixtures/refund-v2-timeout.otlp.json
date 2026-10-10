@@ -1,0 +1,634 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "support-bot"
+            }
+          },
+          {
+            "key": "service.version",
+            "value": {
+              "stringValue": "2.0.0"
+            }
+          },
+          {
+            "key": "deployment.environment.name",
+            "value": {
+              "stringValue": "staging"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {
+            "name": "support_bot.agent",
+            "version": "2.0.0"
+          },
+          "spans": [
+            {
+              "traceId": "31f79ab848a1ab7b9a6deac936d1dedb",
+              "spanId": "a35474832cb5b333",
+              "name": "invoke_agent support-bot",
+              "kind": 1,
+              "startTimeUnixNano": "1791451980000000000",
+              "endTimeUnixNano": "1791451988250000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "support-bot"
+                  }
+                },
+                {
+                  "key": "feature",
+                  "value": {
+                    "stringValue": "refund-assistant"
+                  }
+                },
+                {
+                  "key": "tenant.id",
+                  "value": {
+                    "stringValue": "tenant-a"
+                  }
+                },
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.provider.name",
+                  "value": {
+                    "stringValue": "example"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.id",
+                  "value": {
+                    "stringValue": "agent_support_v2"
+                  }
+                },
+                {
+                  "key": "gen_ai.conversation.id",
+                  "value": {
+                    "stringValue": "conv_34d1cde5e935"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "6660"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "145"
+                  }
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "31f79ab848a1ab7b9a6deac936d1dedb",
+              "spanId": "a71890097a1b16e1",
+              "parentSpanId": "a35474832cb5b333",
+              "startTimeUnixNano": "1791451980010000000",
+              "endTimeUnixNano": "1791451980630000000",
+              "status": {},
+              "name": "chat example-small",
+              "kind": 3,
+              "attributes": [
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "support-bot"
+                  }
+                },
+                {
+                  "key": "feature",
+                  "value": {
+                    "stringValue": "refund-assistant"
+                  }
+                },
+                {
+                  "key": "tenant.id",
+                  "value": {
+                    "stringValue": "tenant-a"
+                  }
+                },
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.provider.name",
+                  "value": {
+                    "stringValue": "example"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "example-small"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.model",
+                  "value": {
+                    "stringValue": "example-small-2026-09-01"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.id",
+                  "value": {
+                    "stringValue": "resp_39691fbb6959"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.temperature",
+                  "value": {
+                    "doubleValue": 0.2
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "1900"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "38"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.finish_reasons",
+                  "value": {
+                    "arrayValue": {
+                      "values": [
+                        {
+                          "stringValue": "tool_calls"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "key": "gen_ai.system_instructions",
+                  "value": {
+                    "stringValue": "[{\"type\":\"text\",\"content\":\"You are a support agent for an online homeware store. Refund policy: 30 days from delivery; items damaged on arrival get a full refund with no return. Look up orders (with items) before answering. You may issue refunds up to $100 without asking.\"}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.input.messages",
+                  "value": {
+                    "stringValue": "[{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"content\":\"Hi, my order A-1001 arrived with the mug cracked. Can I get a refund?\"}]}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.output.messages",
+                  "value": {
+                    "stringValue": "[{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"call_1\",\"name\":\"lookup_order\",\"arguments\":{\"order_id\":\"A-1001\",\"include\":[\"items\"]}}],\"finish_reason\":\"tool_calls\"}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.cost_usd",
+                  "value": {
+                    "doubleValue": 0.0003078
+                  }
+                },
+                {
+                  "key": "genaicost.price_book.version",
+                  "value": {
+                    "stringValue": "example-2026-10-01"
+                  }
+                },
+                {
+                  "key": "genaicost.price.model",
+                  "value": {
+                    "stringValue": "example-small*"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "31f79ab848a1ab7b9a6deac936d1dedb",
+              "spanId": "3fade8ff21da425a",
+              "parentSpanId": "a35474832cb5b333",
+              "startTimeUnixNano": "1791451980645000000",
+              "endTimeUnixNano": "1791451980850000000",
+              "status": {},
+              "name": "execute_tool lookup_order",
+              "kind": 1,
+              "attributes": [
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "support-bot"
+                  }
+                },
+                {
+                  "key": "feature",
+                  "value": {
+                    "stringValue": "refund-assistant"
+                  }
+                },
+                {
+                  "key": "tenant.id",
+                  "value": {
+                    "stringValue": "tenant-a"
+                  }
+                },
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "lookup_order"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_1"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.description",
+                  "value": {
+                    "stringValue": "Look up an order by id"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"order_id\":\"A-1001\",\"include\":[\"items\"]}"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.result",
+                  "value": {
+                    "stringValue": "{\"status\":\"delivered\",\"days_since_delivery\":3,\"amount\":42.5,\"currency\":\"USD\",\"items\":[{\"sku\":\"MUG-01\",\"name\":\"Stoneware mug\",\"qty\":1}]}"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "31f79ab848a1ab7b9a6deac936d1dedb",
+              "spanId": "83187bbc2d78f217",
+              "parentSpanId": "a35474832cb5b333",
+              "startTimeUnixNano": "1791451980868000000",
+              "endTimeUnixNano": "1791451981458000000",
+              "status": {},
+              "name": "chat example-small",
+              "kind": 3,
+              "attributes": [
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "support-bot"
+                  }
+                },
+                {
+                  "key": "feature",
+                  "value": {
+                    "stringValue": "refund-assistant"
+                  }
+                },
+                {
+                  "key": "tenant.id",
+                  "value": {
+                    "stringValue": "tenant-a"
+                  }
+                },
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.provider.name",
+                  "value": {
+                    "stringValue": "example"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "example-small"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.model",
+                  "value": {
+                    "stringValue": "example-small-2026-09-01"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.id",
+                  "value": {
+                    "stringValue": "resp_aa80e17864bb"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.temperature",
+                  "value": {
+                    "doubleValue": 0.2
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "2150"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "41"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.finish_reasons",
+                  "value": {
+                    "arrayValue": {
+                      "values": [
+                        {
+                          "stringValue": "tool_calls"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "key": "gen_ai.system_instructions",
+                  "value": {
+                    "stringValue": "[{\"type\":\"text\",\"content\":\"You are a support agent for an online homeware store. Refund policy: 30 days from delivery; items damaged on arrival get a full refund with no return. Look up orders (with items) before answering. You may issue refunds up to $100 without asking.\"}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.input.messages",
+                  "value": {
+                    "stringValue": "[{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"content\":\"Hi, my order A-1001 arrived with the mug cracked. Can I get a refund?\"}]},{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"call_1\",\"name\":\"lookup_order\",\"arguments\":{\"order_id\":\"A-1001\",\"include\":[\"items\"]}}]},{\"role\":\"tool\",\"parts\":[{\"type\":\"tool_call_response\",\"id\":\"call_1\",\"response\":{\"status\":\"delivered\",\"days_since_delivery\":3,\"amount\":42.5,\"currency\":\"USD\",\"items\":[{\"sku\":\"MUG-01\",\"name\":\"Stoneware mug\",\"qty\":1}]}}]}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.output.messages",
+                  "value": {
+                    "stringValue": "[{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"call_2\",\"name\":\"issue_refund\",\"arguments\":{\"order_id\":\"A-1001\",\"amount\":42.5,\"reason\":\"damaged_on_arrival\"}}],\"finish_reason\":\"tool_calls\"}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.cost_usd",
+                  "value": {
+                    "doubleValue": 0.0003471
+                  }
+                },
+                {
+                  "key": "genaicost.price_book.version",
+                  "value": {
+                    "stringValue": "example-2026-10-01"
+                  }
+                },
+                {
+                  "key": "genaicost.price.model",
+                  "value": {
+                    "stringValue": "example-small*"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "31f79ab848a1ab7b9a6deac936d1dedb",
+              "spanId": "57ac5506217c168e",
+              "parentSpanId": "a35474832cb5b333",
+              "startTimeUnixNano": "1791451981475000000",
+              "endTimeUnixNano": "1791451986479000000",
+              "status": {
+                "code": 2,
+                "message": "payments API timed out after 5000 ms"
+              },
+              "name": "execute_tool issue_refund",
+              "kind": 1,
+              "attributes": [
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "support-bot"
+                  }
+                },
+                {
+                  "key": "feature",
+                  "value": {
+                    "stringValue": "refund-assistant"
+                  }
+                },
+                {
+                  "key": "tenant.id",
+                  "value": {
+                    "stringValue": "tenant-a"
+                  }
+                },
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "issue_refund"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.type",
+                  "value": {
+                    "stringValue": "function"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.id",
+                  "value": {
+                    "stringValue": "call_2"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.description",
+                  "value": {
+                    "stringValue": "Refund an order to the original payment method"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"order_id\":\"A-1001\",\"amount\":42.5,\"reason\":\"damaged_on_arrival\"}"
+                  }
+                },
+                {
+                  "key": "error.type",
+                  "value": {
+                    "stringValue": "timeout"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "31f79ab848a1ab7b9a6deac936d1dedb",
+              "spanId": "ec5de0f145d01961",
+              "parentSpanId": "a35474832cb5b333",
+              "startTimeUnixNano": "1791451986500000000",
+              "endTimeUnixNano": "1791451988220000000",
+              "status": {},
+              "name": "chat example-large",
+              "kind": 3,
+              "attributes": [
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "support-bot"
+                  }
+                },
+                {
+                  "key": "feature",
+                  "value": {
+                    "stringValue": "refund-assistant"
+                  }
+                },
+                {
+                  "key": "tenant.id",
+                  "value": {
+                    "stringValue": "tenant-a"
+                  }
+                },
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.provider.name",
+                  "value": {
+                    "stringValue": "example"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "example-large"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.model",
+                  "value": {
+                    "stringValue": "example-large-2026-09-01"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.id",
+                  "value": {
+                    "stringValue": "resp_a8bd94181181"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.temperature",
+                  "value": {
+                    "doubleValue": 0.2
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "2610"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "66"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.cache_read.input_tokens",
+                  "value": {
+                    "intValue": "1800"
+                  }
+                },
+                {
+                  "key": "gen_ai.response.finish_reasons",
+                  "value": {
+                    "arrayValue": {
+                      "values": [
+                        {
+                          "stringValue": "stop"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "key": "gen_ai.system_instructions",
+                  "value": {
+                    "stringValue": "[{\"type\":\"text\",\"content\":\"You are a support agent for an online homeware store. Refund policy: 30 days from delivery; items damaged on arrival get a full refund with no return. Look up orders (with items) before answering. You may issue refunds up to $100 without asking.\"}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.input.messages",
+                  "value": {
+                    "stringValue": "[{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"content\":\"Hi, my order A-1001 arrived with the mug cracked. Can I get a refund?\"}]},{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"call_1\",\"name\":\"lookup_order\",\"arguments\":{\"order_id\":\"A-1001\",\"include\":[\"items\"]}}]},{\"role\":\"tool\",\"parts\":[{\"type\":\"tool_call_response\",\"id\":\"call_1\",\"response\":{\"status\":\"delivered\",\"days_since_delivery\":3,\"amount\":42.5,\"currency\":\"USD\",\"items\":[{\"sku\":\"MUG-01\",\"name\":\"Stoneware mug\",\"qty\":1}]}}]},{\"role\":\"assistant\",\"parts\":[{\"type\":\"tool_call\",\"id\":\"call_2\",\"name\":\"issue_refund\",\"arguments\":{\"order_id\":\"A-1001\",\"amount\":42.5,\"reason\":\"damaged_on_arrival\"}}]},{\"role\":\"tool\",\"parts\":[{\"type\":\"tool_call_response\",\"id\":\"call_2\",\"response\":{\"error\":\"payments API timed out after 5000 ms\"}}]}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.output.messages",
+                  "value": {
+                    "stringValue": "[{\"role\":\"assistant\",\"parts\":[{\"type\":\"text\",\"content\":\"Sorry the mug arrived cracked. Order A-1001 qualifies for a full $42.50 refund, but our payments system didn't respond just now. I've flagged it for the team and you'll get an email once it's processed.\"}],\"finish_reason\":\"stop\"}]"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.cost_usd",
+                  "value": {
+                    "doubleValue": 0.00396
+                  }
+                },
+                {
+                  "key": "genaicost.price_book.version",
+                  "value": {
+                    "stringValue": "example-2026-10-01"
+                  }
+                },
+                {
+                  "key": "genaicost.price.model",
+                  "value": {
+                    "stringValue": "example-large*"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
